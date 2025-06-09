@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Padaria</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Pão</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é o tipo de pão mais consumido?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>O pão francês</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Pão francês/</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quanto custa um pão francês?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>80 centavos em média</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Qual o melhor?</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é o melhor pão?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>o pão de queijo!</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Doce</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é o melhor doce?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>A Carolina.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        // Adiciona o evento de clique para virar os cartões já existentes no HTML
+        document.querySelectorAll('.cartao').forEach(cartao => {
+            cartao.addEventListener('click', viraCartao);
+        });
+    </script>
+</body>
+</html>
